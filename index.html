@@ -4,83 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <section>
-              <img src="./images/лого.png" alt="logo" width="244" height="45">
-              <div>
-                <div>
-                    <img src="./images/carbon_phone.png" alt="phone" width="24px" height="24px">
-                    <a href="tel:+89209994350">8 920 999 43 50</a>
+        <div class="wrapper">
+            <section class="info">
+                <img src="./images/лого.png" alt="logo" width="244" height="45">
+                <div class="tools">
+                  <div>
+                      <img src="./images/carbon_phone.png" alt="phone" width="24px" height="24px">
+                      <a class="call" href="tel:+89209994350">8 920 999 43 50</a>
+                  </div>
+                  <div class="cart">
+                      <img src="./images/Buy.png" alt="cart" width="25px" height="25px">
+                      <p>2</p>
+                  </div>
+                  <img src="./images/аккаунт.png" alt="account" width="30px" height="30px">
                 </div>
-                <div class="cart">
-                    <img src="./images/Buy.png" alt="cart" width="25px" height="25px">
-                    <p>2</p>
-                </div>
+          </section>
+          <section class="navigation">
+              <nav>
+                  <a class="link" href="#">Каталог<img src="./images/eva_arrow-ios-upward-outline.png" width="15px" height="15px"></a>
+                  <a class="link" href="#">О проекте</a>
+                  <a class="link" href="#">Птицы</a>
+                  <a class="link" href="#">Пожертвования</a>
+              </nav>
+              <div class="search">
+                <input type="text" placeholder="Поиск">
+                <img src="./images/Search.png" width="30px" height="30px">
               </div>
-        </section>
-        <section>
-            <nav>
-                <a href="#">Каталог</a>
-                <img src="./images/eva_arrow-ios-upward-outline.png" width="15px" height="15px">
-                <a href="#">О проекте</a>
-                <a href="#">Птицы</a>
-                <a href="#">Пожертвования</a>
-            </nav>
-            <input type="text" src="./images/Search.png">
-        </section>
+          </section>
+        </div>
     </header>
     <main>
-        <div>
+        <div class="wrapper">
             <div>
-                <p>Каталог</p>
-                <img src="./images/Ellipse 15.png" width="6px" height="6px">
-                <p>Готовые миксы</p>
-            </div>
-            <div>
-                <img src="./images/arrow-side.png" width="18px" height="18px">
-                <p>Назад</p>
-            </div>
-        </div>
-        <div class="cards">
-            <article>
-                <img src="./images/фото.png" alt="feed" width="275px" height="227px">
-                <h2>PADOVAN OVOMIX GOLD ROSSO</h2>
-                <p>Корм для птиц</p>
-                <h3>1000 руб.</h3>
-                <div class="weight">
-                    <p>200 г</p>
-                    <p>400 г</p>
-                    <p>800 г</p>
-                    <p>1 кг</p>
+                <div>
+                    <p>Каталог</p>
+                    <img src="./images/Ellipse 15.png" width="6px" height="6px">
+                    <p>Готовые миксы</p>
                 </div>
                 <div>
-                    <button type="button">Подробнее</button>
-                    <img src="./images/Buy.png" width="22px" height="22px">
+                    <img src="./images/arrow-side.png" width="18px" height="18px">
+                    <p>Назад</p>
                 </div>
-            </article>
-        </div>
-        <div>
-            <img src="./images/Arrow - Down 3.png" width="10px" height="6px">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <img src="./images/Arrow - Down 2.png" width="10px" height="6px">
+            </div>
+            <div class="cards">
+                <article>
+                    <img class="foto-feed" src="./images/фото.jpg" alt="feed" width="275px" height="227px">
+                    <div class="feed-title">
+                        <h2>PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <p>Корм для птиц</p>
+                    </div>
+                    <h3 class="price">1000$</h3>
+                    <div class="weight">
+                        <p>200 г</p>
+                        <p>400 г</p>
+                        <p>800 г</p>
+                        <p>1 кг</p>
+                    </div>
+                    <div class="more">
+                        <a class="button-more" href="#">Подробнее</a>
+                        <a href="#">
+                            <img src="./images/Buy.png" width="22px" height="22px">
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <img src="./images/Arrow - Down 3.png" width="10px" height="6px">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <img src="./images/Arrow - Down 2.png" width="10px" height="6px">
+            </div>
         </div>
     </main>
     <footer>
-        <div>
-            <p>Оплата</p>
-            <p>Доставка</p>
-        </div>
-        <div>
-            <img src="./images/cib_vk.png" width="25px" height="25px">
-            <img src="./images/Vector.png" width="25px" height="25px">
-        </div>
-        <div>
-            <img src="./images/carbon_phone.png" alt="phone" width="24px" height="24px">
-            <a href="tel:+89209994350">8 920 999 43 50</a>
+        <div class="wrapper">
+            <div>
+                <p>Оплата</p>
+                <p>Доставка</p>
+            </div>
+            <div>
+                <img src="./images/cib_vk.png" width="25px" height="25px">
+                <img src="./images/Vector.png" width="25px" height="25px">
+            </div>
+            <div>
+                <img src="./images/carbon_phone.png" alt="phone" width="24px" height="24px">
+                <a href="tel:+89209994350">8 920 999 43 50</a>
+            </div>
         </div>
     </footer>
 </body>

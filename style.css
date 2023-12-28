@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body, p, h2, h3 {
+    margin: 0;
+}
+
+header {
+    background-color:#FFFFFF;
+}
+
+.info {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px; 
+}
+
+.tools {
+    display: flex;
+}
+
+.call {
+    color: #000;
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: 42px;
+    margin-left: 9px;
+}
+
+.wrapper {
+    width: 1129px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cart {
+    margin-left: 60px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 59px;
+}
+
+.navigation nav {
+    display: flex;
+    gap: 40px;
+}
+
+main {
+    background-color: #F9F9F9;
+}
+
+.link {
+    color: #4F4F4F;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.search input {
+    width: 345px;
+    height: 54px;
+    border-radius: 10px;
+    border: 1px solid  #BDBDBD;
+    background-color: #F2F2F2;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 30px 20px;
+    gap: 25px;
+    border-radius: 20px;
+    border: 1px solid  #F2F2F2;
+    background-color: #F9F9F9;
+    box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 0.05), -8px -8px 15px 0px #FFF;
+    width: 315px;
+}
+
+.weight {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.foto-feed {
+    border-radius: 5px;
+}
+
+.more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed-title h2 {
+    color:  #333;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+    width: 275px;
+}
+
+.feed-title p {
+    color:  #828282;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 5px;
+}
+
+.price {
+    color: #333;
+    font-family: Gilroy;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.weight p {
+    color:  #4F4F4F;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.weight p:nth-child(1) {
+    border-radius: 5px;
+    border: 1px solid #3ECF5E;
+    padding: 4px 12px;
+}
+
+.button-more {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid rgba(5, 175, 52, 0.53);
+    background-color: #3FCF5E;
+    padding: 12px 32px;
+    text-decoration: none;
+}
+
+.more a:nth-child(2) {
+    border-radius: 10px;
+    border: 1px solid  #BDBDBD;
+    padding: 11px 11px;
+}
