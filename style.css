@@ -31,7 +31,7 @@ header {
 }
 
 .wrapper {
-    width: 1129px;
+    width: 1260px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -159,4 +159,9 @@ article {
     border-radius: 10px;
     border: 1px solid  #BDBDBD;
     padding: 11px 11px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
 }
