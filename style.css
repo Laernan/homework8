@@ -4,6 +4,7 @@
 
 body, p, h2, h3 {
     margin: 0;
+    font-family: sans-serif;
 }
 
 header {
@@ -18,16 +19,16 @@ header {
 
 .tools {
     display: flex;
+    align-items: center;
 }
 
-.call {
+.call-item .call {
     color: #000;
     font-family: Gilroy;
     font-size: 18px;
     line-height: normal;
     text-decoration: none;
-    margin-top: 42px;
-    margin-left: 9px;
+  
 }
 
 .wrapper {
@@ -42,10 +43,21 @@ header {
     display: flex;
 }
 
+.cart p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    background-color: green;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 59px;
+    align-items: center;
+    margin-bottom: 46px;
 }
 
 .navigation nav {
@@ -55,6 +67,8 @@ header {
 
 main {
     background-color: #F9F9F9;
+    padding-top: 75px;
+    padding-bottom: 100px;
 }
 
 .link {
@@ -66,12 +80,21 @@ main {
     text-decoration: none;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+}
+
 .search input {
     width: 345px;
     height: 54px;
     border-radius: 10px;
     border: 1px solid  #BDBDBD;
     background-color: #F2F2F2;
+}
+
+.search img {
+    padding: 2.573px 2.5px;
 }
 
 article {
@@ -171,7 +194,6 @@ article {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 100px;
     gap: 20px;
     align-items: center;
 }
@@ -205,13 +227,13 @@ footer {
     gap: 20px;
 }
 
-.call-footer {
+.call-item {
     display: flex;
     align-items: center;
     gap: 9px;
 }
 
-.call-footer a {
+.call-item a {
     color:  #FFF;
     font-family: Gilroy;
     font-size: 18px;
@@ -219,3 +241,35 @@ footer {
     line-height: normal;
     text-decoration: none;
 }
+
+.catalog {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.catalog p {
+    color:  #BDBDBD;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.back {
+    display: flex;
+    gap: 4px;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.back p {
+    color: #333;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
