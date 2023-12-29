@@ -31,7 +31,7 @@ header {
 }
 
 .wrapper {
-    width: 1260px;
+    width: 1320px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -164,4 +164,58 @@ article {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+footer {
+    background: #333;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay {
+    display: flex;
+    gap: 47px;
+}
+
+.pay p {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.media {
+    display: flex;
+    gap: 20px;
+}
+
+.call-footer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.call-footer a {
+    color:  #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
 }
