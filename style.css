@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body, p, h2, h3 {
+body, p, h2, h3, a  {
     margin: 0;
     font-family: sans-serif;
 }
@@ -198,6 +198,15 @@ article {
     align-items: center;
 }
 
+.pages a {
+    color: var(--Gray-3, #828282);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
 footer {
     background: #333;
     padding-top: 100px;
@@ -214,12 +223,13 @@ footer {
     gap: 47px;
 }
 
-.pay p {
+.pay a {
     color: #FFF;
     font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
+    text-decoration: none;
 }
 
 .media {
@@ -264,12 +274,13 @@ footer {
     margin-bottom: 44px;
 }
 
-.back p {
+.back {
     color: #333;
     font-family: Gilroy;
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
+    text-decoration: none;
 }
 
 
