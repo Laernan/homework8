@@ -132,6 +132,7 @@ article {
     background-color: #F9F9F9;
     box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 0.05), -8px -8px 15px 0px #FFF;
     width: 315px;
+    position: relative;
 }
 
 .weight {
@@ -307,4 +308,16 @@ footer {
     text-decoration: none;
 }
 
+.new {
+    padding: 9px 16px;
+    border-radius: 10px;
+    background-color:  #333;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
 
