@@ -173,20 +173,21 @@ article {
     line-height: normal;
 }
 
-.weight p {
+.weight a {
     color:  #4F4F4F;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
+    text-decoration: none;
 }
 
-.weight p:nth-child(1) {
+.weight a:nth-child(1) {
     border-radius: 5px;
     border: 1px solid #3ECF5E;
     padding: 4px 5px;
 }
 
-.weight p:hover {
+.weight a:hover {
     border-radius: 5px;
     border: 1px solid #3ECF5E;
     padding: 4px 12px;
