@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,15 +17,14 @@
                     <img src="./images/лого.png" alt="logo" width="244" height="45">
                 </a>
                 <div class="tools">
-                  <div class="call-item">
-                      <img src="./images/carbon_phone.png" alt="phone" width="24px" height="24px">
-                      <a class="call" href="tel:+89209994350">8 920 999 43 50</a>
-                  </div>
-                  <div class="cart">
-                      <img src="./images/Buy.png" alt="cart" width="25px" height="25px">
-                      <p>2</p>
-                  </div>
-                  <img src="./images/аккаунт.png" alt="account" width="30px" height="30px">
+                  <a class="call-item call" href="tel:+89209994350"><img src="./images/carbon_phone.png" alt="phone" width="24px" height="24px">8 920 999 43 50</a>
+                  <a href="#" class="cart">
+                      <span>2</span>
+                      <img src="./images/Buy.png" alt="cart" width="30px" height="30px">
+                  </a>
+                  <a href="#">
+                      <img src="./images/аккаунт.png" alt="account" width="30px" height="30px">
+                  </a>
                 </div>
           </section>
           <section class="navigation">
@@ -43,9 +45,9 @@
         <div class="wrapper">
             <div>
                 <div class="catalog">
-                    <p>Каталог</p>
+                    <a href="#">Каталог</a>
                     <img src="./images/Ellipse 15.png" width="6px" height="6px">
-                    <p>Готовые миксы</p>
+                    <a href="#">Готовые миксы</a>
                 </div>
                 <div>
                     <a class="back" href="#">
@@ -235,13 +237,14 @@
                 <a href="#">Доставка</a>
             </div>
             <div class="media">
-                <img src="./images/cib_vk.png" width="25px" height="25px">
-                <img src="./images/Vector.png" width="25px" height="25px">
+                <a href="#">
+                    <img src="./images/cib_vk.png" width="25px" height="25px">
+                </a>
+                <a href="#">
+                    <img src="./images/Vector.png" width="25px" height="25px">
+                </a>
             </div>
-            <div class="call-item">
-                <img src="./images/carbon_phone (1).svg" alt="phone" width="24px" height="24px">
-                <a href="tel:+89209994350">8 920 999 43 50</a>
-            </div>
+            <a class="call-item" href="tel:+89209994350"><img src="./images/carbon_phone (1).svg" alt="phone" width="24px" height="24px">8 920 999 43 50</a>
         </div>
     </footer>
 </body>

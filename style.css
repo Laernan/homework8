@@ -1,10 +1,12 @@
+@import url(./fonts/stylesheet.css);
+
 * {
     box-sizing: border-box;
 }
 
 body, p, h2, h3, a  {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Gilroy', sans-serif;
 }
 
 header {
@@ -22,13 +24,12 @@ header {
     align-items: center;
 }
 
-.call-item .call {
+.call-item.call {
     color: #000;
-    font-family: Gilroy;
     font-size: 18px;
     line-height: normal;
     text-decoration: none;
-  
+    font-weight: 400px;
 }
 
 .wrapper {
@@ -40,16 +41,30 @@ header {
 .cart {
     margin-left: 60px;
     margin-right: 20px;
-    display: flex;
+    text-decoration: none;
+    position: relative;
 }
 
-.cart p {
+.cart span {
     color: #FFF;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
-    background-color: green;
+    background-color: #06D10E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 3px 7px;
+}
+
+.cart img {
+    width: 30px;
+    height: 30px;
 }
 
 .navigation {
@@ -73,16 +88,22 @@ main {
 
 .link {
     color: #4F4F4F;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
 }
 
+.link:first-child {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 .search {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .search input {
@@ -95,6 +116,10 @@ main {
 
 .search img {
     padding: 2.573px 2.5px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    bottom: 7px;
 }
 
 article {
@@ -128,7 +153,6 @@ article {
 
 .feed-title h2 {
     color:  #333;
-    font-family: Gilroy;
     font-size: 24px;
     font-weight: 600;
     line-height: 130%;
@@ -137,7 +161,6 @@ article {
 
 .feed-title p {
     color:  #828282;
-    font-family: Gilroy;
     font-size: 16px;
     line-height: 130%;
     margin-top: 5px;
@@ -145,7 +168,6 @@ article {
 
 .price {
     color: #333;
-    font-family: Gilroy;
     font-size: 22px;
     font-weight: 700;
     line-height: normal;
@@ -153,7 +175,6 @@ article {
 
 .weight p {
     color:  #4F4F4F;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
@@ -162,12 +183,17 @@ article {
 .weight p:nth-child(1) {
     border-radius: 5px;
     border: 1px solid #3ECF5E;
+    padding: 4px 5px;
+}
+
+.weight p:hover {
+    border-radius: 5px;
+    border: 1px solid #3ECF5E;
     padding: 4px 12px;
 }
 
 .button-more {
     color: #FFF;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
@@ -225,7 +251,6 @@ footer {
 
 .pay a {
     color: #FFF;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
@@ -243,9 +268,8 @@ footer {
     gap: 9px;
 }
 
-.call-item a {
+.call-item  {
     color:  #FFF;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
@@ -258,12 +282,12 @@ footer {
     align-items: center;
 }
 
-.catalog p {
+.catalog a {
     color:  #BDBDBD;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
+    text-decoration: none;
 }
 
 .back {
@@ -276,7 +300,6 @@ footer {
 
 .back {
     color: #333;
-    font-family: Gilroy;
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
