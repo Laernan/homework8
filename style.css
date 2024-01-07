@@ -11,12 +11,14 @@ body, p, h2, h3, a  {
 
 header {
     background-color:#FFFFFF;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05), 0px -5px 15px 0px rgba(255, 255, 255, 0.44) inset;
+    padding-top: 33px;
+    padding-bottom: 30px;
 }
 
 .info {
    display: flex;
    justify-content: space-between;
-   margin-top: 40px; 
 }
 
 .tools {
@@ -72,7 +74,6 @@ header {
     justify-content: space-between;
     margin-top: 59px;
     align-items: center;
-    margin-bottom: 46px;
 }
 
 .navigation nav {
@@ -112,6 +113,7 @@ main {
     border-radius: 10px;
     border: 1px solid  #BDBDBD;
     background-color: #F2F2F2;
+    padding-left: 20px;
 }
 
 .search img {
@@ -119,7 +121,6 @@ main {
     position: absolute;
     top: 15px;
     right: 20px;
-    bottom: 7px;
 }
 
 article {
@@ -174,24 +175,23 @@ article {
     line-height: normal;
 }
 
-.weight a {
+.weight button {
     color:  #4F4F4F;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    border: none;
+    font-family: Gilroy;
+    padding: 0;
+    background-color: transparent;
 }
 
-.weight a:nth-child(1) {
+.weight button:nth-child(1) {
     border-radius: 5px;
     border: 1px solid #3ECF5E;
     padding: 4px 5px;
-}
-
-.weight a:hover {
-    border-radius: 5px;
-    border: 1px solid #3ECF5E;
-    padding: 4px 12px;
+    background-color:  #FFF;
 }
 
 .button-more {
@@ -227,12 +227,17 @@ article {
 }
 
 .pages a {
-    color: var(--Gray-3, #828282);
+    color:  #828282;
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+}
+
+.pages .active {
+    color:  #219653;
+    font-weight: 700;
 }
 
 footer {
@@ -249,6 +254,7 @@ footer {
 .pay {
     display: flex;
     gap: 47px;
+    align-items: center;
 }
 
 .pay a {
@@ -262,20 +268,19 @@ footer {
 .media {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .call-item {
     display: flex;
     align-items: center;
     gap: 9px;
-}
-
-.call-item  {
     color:  #FFF;
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    justify-content: flex-end;
 }
 
 .catalog {
@@ -293,19 +298,21 @@ footer {
 }
 
 .back {
-    display: flex;
-    gap: 4px;
-    margin-top: 30px;
-    align-items: center;
-    margin-bottom: 44px;
-}
-
-.back {
+    display: inline-block;
     color: #333;
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.return {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 44px;
 }
 
 .new {
@@ -319,5 +326,21 @@ footer {
     position: absolute;
     top: 12px;
     right: 12px;
+}
+
+.search input::placeholder {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: normal;
+    margin-right: 20px;
+    color: #828282;
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    top: 17px;
+}
+
+.block {
+    width: 640px;
 }
 
