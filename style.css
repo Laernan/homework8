@@ -348,10 +348,10 @@ footer {
 }
 
 .menu .feed-menu {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding-left: 25px;
     padding-right: 52px;
     padding-top: 21px;
@@ -360,6 +360,7 @@ footer {
     background-color: #FFF;
     z-index: 5;
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.10);
+    width: 284px;
 }
 
 .feed-menu a {
@@ -376,35 +377,97 @@ footer {
 }
 
 
-.choice:hover nav {
+.choice:hover .choice-menu {
    display: flex;
-   flex-direction: column;
-   gap: 30px;
 }
 
 .choice {
-   width: 70px;
-   display: flex;
-   align-items: center;
+    position: relative;
 }
 
-.link-catalog {
-    height: 200px;
+.choice-menu {
     position: absolute;
-    top: -90px;
+    top: 100%;
     left: 0;
+    padding-top: 40px;
+    display: none;
 }
 
-.link-catalog:hover {
-    background-image: url(./images/arrow-green.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 15px 15px;
-}
-
-.link-catalog::after {
+.link.catalog::after {
     content: '';
     background-image: url(./images/arrow_down.png);
     background-repeat: no-repeat;
-    background-position: center;
+    width: 15px;
+    height: 15px;
+}
+
+.choice:hover .link.catalog::after {
+    background-image: url(./images/arrow-green.jpg);
+}
+
+.container a {
+    width: 244px;
+    padding: 15px 53px;
+    color:  #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid  #BDBDBD;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 284px;
+    border-radius: 15px;
+    background-color:  #FFF;
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.10);
+    z-index: 5;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sign-menu {
+    padding-top: 50px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.list {
+    position: relative;
+}
+
+.list:hover .sign-menu{
+    display: flex;
+}
+
+.container a:first-child {
+    background-color: #3FCF5E;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.profile::after {
+    content: '';
+    background-image: url(./images/account.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 2.573px 2.5px 2.837px 2.5px;
+    align-items: center;
+}
+
+.list:hover .profile::after {
+    background-image: url(./images/account-green.png);
 }
